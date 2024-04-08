@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">  
+
+    <head> 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Meu HTML</title>
+
+        <style>
+            h1 {
+                background: red;
+            }
+
+            p {
+                background: rgb(213, 213, 213);
+            }
+
+            /*atributo 'id' é superior a 'class'*/
+            #cabecalho-2 {
+                background: purple;
+            }
+
+            .fundo-vermelho {
+                background: red;
+            }
+
+            .bold {
+                color: rgb(44, 17, 81)
+            }
+        </style>
+    </head>
+
+    <body /*hierarquias de heading: h1, h2, h3, etc.*/>
+        <h1 id="cabecalho-1" class="fundo-vermelho borda-esquerda">Vai vir aqui um título</h1> 
+        <h2 style="background-color: aqua;">Este é um subtítulo</h2>
+        <p>Um pouco menor, em termos de primoridade, do que o 'h1'</p>
+        <h1 id="cabecalho-2"class="fundo-vermelho">Vai vir aqui um outro título</h1>
+        <p>Um texto <b class="bold">daora</b></p>
+        <p>Um texto <b class="bold">daora</b></p>
+        <p>Um texto <b class="non-bold">daora</b></p>
+        <p>Um texto <b class="bold">daora</b></p>
+        <h2 style="background-color: aqua;">Outro subtítulo</h2>
+        <h3 style="background-color: rgb(0, 200, 255);">Aqui é um sub-subtítulo</h3>
+        <p>Vem logo após o 'h2'</p>
+        <h2 style="background-color: aqua;">Subtítulo</h2>
+        <h3 style="background-color: rgb(0, 200, 255);">Sub-subtítulo</h3>
+        <h4 style="background-color: rgb(0, 157, 255);">Aqui é um sub-sub-subtítulo</h4>
+        <p>Logo após o 'h3'</p>
+        <h5 style="background-color: rgb(37, 128, 208);">Sub-sub-sub-subtítulo, depois do 'h4'</h5>
+        <h6 style="background-color: rgb(84, 125, 179);">Sub-sub-sub-sub-subtítulo, depois do 'h5'</h6>
+        <p>Lembrnado que a hieerarquia não tem nada a ver com tamanho, mas com grau de importância. por exemplo:</p>
+        <h6 style="font-size: 30px;">Isso é um 'h6'</h6>
+        <p>Sargente de 1,60 ainda é maior que soldade de 1,90</p>
+    </body>
+</html>
