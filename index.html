@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semânticas</title>
+    <title>Sobre Listas</title>
 
     <style>
-        h1, h2 {
-            font-family: sans-serif;
-        }
 
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+        }
+        nav {
+            background: rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            background-color: red;
         }
 
-        .section-one,
-        .section-two{
-            box-sizing: border-box;
-        }
-        .section-one {
-            background-color: deeppink;
-            background-image: url(https://static.vecteezy.com/ti/fotos-gratis/t1/22653879-fantasia-ilha-com-cachoeiras-3d-ilustracao-elementos-do-isto-imagem-mobiliado-de-nasa-generativo-ai-gratis-foto.jpg);
-            background-position: center center;
-            color: #fff;
-            font-style: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            width: 200px;
-            height: 100px;
-            border-style: solid;
-            border-width: 10px;
-            border-bottom-color: red;
-            border-top-color: green;
-            border-left-color: blue;
-            border-right-color: yellow;
-            padding: 15px 14px 13px 12px;
-            margin: 30px;
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 0px 20px;
+            display: block;
+            text-transform: uppercase;
         }
 
-        .section-two {
-            background: cyan;
-            width: 200px;
-            height: 50px;
-            border: 5px solid black;
-            padding: 15px;
-            margin: 30px;
+        nav a:hover {
+            background-color: rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+             
+        }
+
+        dl {
+            margin-left: 25px;
         }
     </style>
 </head>
-
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <h1>Box-Model:</h1>
-    <br>
+<h1>Sobre listas</h1>
 
-    <section class="section-one">Lorem ipsum dolor, adipisicing elit. </section>
-    <section class="section-two">2</section>
+    <ul>
+        <li>Item 2</li>
+        <li>Item 1</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol type="a" start="2">
+        <li>Item 2</li>
+        <li>Item 1</li>
+        <li>Item 3</li>
+    </ol>
+
+    <dl>
+        <dt>Café</dt>
+        <dd>bebida preta quente</dd>
+        <dt>Café</dt>
+        <dd>bebida preta quente</dd>
+    </dl>
 
 </body>
 </html>
