@@ -4,54 +4,22 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: sans-serif;
 }
 
-.heading {
-    transition: all 300ms ease-in-out
+p {
+    font-size: 10px;
 }
 
-.heading:hover {
-    background: red;
+p:nth-child(odd) {
+    background-color: rebeccapurple;
 }
 
-a {
-    color: darkgoldenrod;
+p:nth-child(even) {
+    background-color: darkcyan;
 }
 
-a:link {
-    color: rgba(66, 97, 0, 0.988);
+p:nth-child(3n) {
+    background-color: darkgray;
 }
 
-a:visited {
-    color: rgb(245, 43, 87);
-}
-
-a:hover {
-    background: darkslateblue;
-    color: white;   
-    text-decoration: none;
-}
-
-a:active {
-    background: darkmagenta;
-    color: white;   
-    text-decoration: none;
-}
-
-input:not(checked) + p{
-    background: lightcoral;
-}
-
-input:checked + p{
-    background: lightblue;
-}
-
-.pai .lista li:last-child {
-    background-color: red;
-}
-
-input:required {
-    background-color: red;
-}
-
-p:not(.meio){
-    color: blue;
+p:nth-child(3n+10) {
+    background-color: bisque;
 }
