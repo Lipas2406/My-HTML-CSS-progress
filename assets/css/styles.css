@@ -8,6 +8,27 @@ p {
     font-size: 24px;
 }
 
-.text::placeholder {
-    color: red;
+/*
+ID  Classe, atributos e pseudo-classe    Elementos e pseudo-elementos
+
+especificidade +
+empate ++
+Style +++
+!important ++++
+*/
+
+body#b.bclass p#p.p {
+    background-color: blue !important;
+}
+
+body#b.bclass p#p.p {
+    background-color: purple !important;
+}
+
+#p {
+    background-color: red;
+}
+
+.p {
+    background-color: yellow;
 }
