@@ -5,21 +5,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 p {
-    font-size: 10px;
+    font-size: 24px;
 }
 
-p:nth-child(odd) {
-    background-color: rebeccapurple;
-}
-
-p:nth-child(even) {
-    background-color: darkcyan;
-}
-
-p:nth-child(3n) {
-    background-color: darkgray;
-}
-
-p:nth-child(3n+10) {
-    background-color: bisque;
+.text::placeholder {
+    color: red;
 }
