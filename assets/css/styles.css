@@ -1,21 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: sans-serif;
 }
 
-.pai .um+.dois {
-    color: red;
+.heading {
+    transition: all 300ms ease-in-out
 }
 
-[meu-atributo*="cou e qual"] {
-    color: red;
+.heading:hover {
+    background: red;
 }
 
-[checked] {
-    width: 50px;
-    height: 50px;
+a {
+    color: darkgoldenrod;
+}
+
+a:link {
+    color: rgba(66, 97, 0, 0.988);
+}
+
+a:visited {
+    color: rgb(245, 43, 87);
+}
+
+a:hover {
+    background: darkslateblue;
+    color: white;   
+    text-decoration: none;
+}
+
+a:active {
+    background: darkmagenta;
+    color: white;   
+    text-decoration: none;
+}
+
+input:checked + p{
+    background: lightblue;
 }
