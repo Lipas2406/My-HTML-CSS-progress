@@ -17,14 +17,12 @@ html {
 header {
     width: 100%;
     position: fixed;
-    
+    background-color: darkcyan;
 }
 
 
 
 nav {
-    background-color: darkcyan;
-    padding: 15px;
     align-items: center;
 }
 
@@ -32,7 +30,7 @@ nav a {
     color: #ffffff;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0px 20px;
+    padding: 0px 15px;
     display: block;
     text-transform: uppercase;
     transition: all 300ms ease-in-out;
@@ -42,10 +40,15 @@ nav a {
 .header nav ul {
     display: flex;
     list-style: none;
-    text-align: center;
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto
 }
 
-nav a:hover {
+
+
+
+nav ul a:hover {
     color: aquamarine;
     background-color: rgba(0, 255, 255, 0.095);
 }
@@ -62,6 +65,11 @@ nav a:hover {
     height: 100%;
     padding-bottom: 50px;
     background-color: rgba(0, 255, 255, 0.193);
+}
+
+.home-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .titulo {
@@ -122,10 +130,15 @@ p {
 
 
 
-
+#produtos h2 {
+    padding: 60px 0 0 30px;
+    
+}
 
 .grid {
-    padding: 60px 15px;
+    max-width: 1200px;
+    padding: 20px 0 60px 15px;
+    margin: 0 auto;
 }
 
 .grid::after {
@@ -141,11 +154,24 @@ p {
     padding: 15px;
 }
 
+.col-1 .col-content{
+    box-shadow: -3px 2px 7px -1px;
+}
+
+.col-2 .col-content{
+    box-shadow: inset 5px -5px 5px -1px purple, 2px -2px 5px -1px orange
+}
+
 .grid .col-content {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    text-align: center;
 }
+
+
+
 
 @media (max-width: 568px) {
     .grid .col {
@@ -178,19 +204,31 @@ p {
 
 .serviços {
     background-color: rgb(1, 82, 82);
-    padding: 60px 0;
+    padding: 60px 30px;
+    height: 100vh;
+    min-height: 500px;
+}
+
+.serviços-content {
+    margin: 0 auto;
+    max-width: 1200px;
     height: 100vh;
 }
 
-.serviços p {
+.serviços h2 {
+    padding: 20px 0;
     color: white;
+
 }
 
 .services li {
-    padding: 10px 20px 0 200px;
+    padding: 20px 20px 20px 20px;
     font-size: 18px;
     color: rgb(217, 223, 255);
-    list-style: lower-alpha;
+    list-style: none;
+    margin: 5px 0;
+    background-color: rgba(0, 103, 108, 0.675);
+    border-radius: 30px;
 }
 
 
@@ -199,19 +237,25 @@ p {
     background-color: black;
     color: white;
     height: 300px;
+    padding: 60px 30px 20px 30px;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about h1 {
     color: rgba(0, 255, 255);
-    padding: 60px 50px;
+    padding-bottom: 20px;
 }
 
 .about p {
-    padding-left: 60px;
+    padding-left: 2px;
 }
 
 #implicito {
     color: white;
-    font-size: 8px;
+    font-size: 6px;
     text-align: right;
 }
