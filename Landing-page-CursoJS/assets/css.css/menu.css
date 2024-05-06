@@ -5,6 +5,7 @@
     right: 0;
     width: 100%;
     border-bottom: solid 0.3rem var(--light-gray-color) ;
+    z-index: 1;
 }
 
 .menu-content {
@@ -52,4 +53,8 @@
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.menu-spacing {
+    height: 7rem;
 }
