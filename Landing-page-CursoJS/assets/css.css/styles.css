@@ -1,6 +1,6 @@
 .intro-content {
     position: relative;
-    top: -8rem;
+    /* top: -8rem; */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -74,6 +74,9 @@
 
 
 
+
+
+
 .gallery-img {
     width: 100%;
     max-width: 36rem;
@@ -87,4 +90,135 @@
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) rotate(5deg) scale(1.2);
+}
+
+
+@media screen and (min-height: 760.1px) {
+    .contact {
+        height: 180vh;
+    }
+}
+
+@media screen and (max-height: 760px) {
+    .contact {
+        height: 195vh;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .contact {
+        height: 210vh;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .contact {
+        height: 240vh;
+    }
+}
+
+@media screen and (max-height: 560px) {
+    .contact {
+        height: 300vh;
+    }
+}
+
+@media screen and (max-height: 470px) {
+    .contact {
+        height: 350vh;
+    }    
+}
+
+@media screen and (max-height: 390px) {
+    .contact {
+        height: 400vh;
+    }    
+}
+
+.contact-form {
+    grid-column: span 2;
+    margin-bottom: 50rem;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 32rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    display: flex;
+    border: none;
+    background-color: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 1.8rem;
+    outline: none;
+}
+
+.form-group textarea {
+    position: relative;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 10px 1px var(--secundary-color);
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2.6rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+    
+}
+
+.footer {
+
+
+    text-align: center;
+    z-index: 1;
+
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.footer p {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 2.5rem;
+}
+
+.heart {
+    color: var(--secundary-color);
 }
