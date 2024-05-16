@@ -17,7 +17,6 @@
 
 
 
-
 .intro-img img {
     max-width: 100%;
     height: auto;
@@ -79,7 +78,6 @@
 
 .gallery-img {
     width: 100%;
-    max-width: 36rem;
     max-width: 36rem;
     overflow: hidden;
 }
@@ -240,7 +238,40 @@
     border: 0.1rem solid var(--primary-color);
 }
 
+.responsive-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+table td {
+    background-color: var(--white-color);
+}
+
 @media (max-width: 810px) {
+
+    .contact .intro-img {
+        display: none;
+    }
 
     .menu-spacing {
         height: 0rem;
@@ -249,6 +280,25 @@
     .intro-content, .grid {
         grid-template-columns: 1fr;
     }  
+
+    .intro-content {
+        height: auto;
+        min-height: auto;
+    }
+
+    .intro-img {
+        margin-top: 2rem;
+    }
+
+    .jobs-content {
+        min-height: auto;
+        padding: 2rem;
+    }
+
+    .grid-one-content {
+        min-height: auto;
+        padding: 2rem;
+    }
 
     .menu {
         bottom: 0;
